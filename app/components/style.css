@@ -1,0 +1,131 @@
+.carousel-item {
+  height: 100vh;
+  overflow: hidden;
+}
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+  /* object-position: top; */
+}
+
+.carousel-inner .overlay-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5rem 0 5rem;
+}
+
+.overlay-container h1 {
+  text-align: center;
+  color: white;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+/* divider start */
+.divider {
+  background-color: brown;
+  color: white;
+  height: 25vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/divider_bg.jpg);
+}
+.divider h2 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+/* divider end */
+
+/* program start */
+.programs .program {
+  height: 50vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.program:nth-of-type(1) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(/programs/carb.jpg);
+  background-size: cover;
+}
+.program:nth-of-type(2) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(/programs/diabetes.jpg);
+  background-size: cover;
+}
+.program:nth-of-type(3) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/programs/lean.jpg);
+  background-size: cover;
+}
+.program h3 {
+  font-weight: 700;
+}
+.program p {
+  font-size: 0.9rem;
+}
+.program button {
+  background-color: transparent;
+  font-weight: 700;
+  border: 1px solid red;
+  color: rgb(231, 231, 231);
+  transition: all 0.2s ease-in;
+  font-size: 0.9rem;
+  border-radius: 5px;
+}
+.program button:hover {
+  background-color: red;
+  color: white;
+}
+
+/* program end */
+
+/* newsletter start */
+.newsletter {
+  background-color: brown;
+  color: white;
+  height: 25vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/divider_bg.jpg);
+}
+.newsletter h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 60%;
+  text-transform: uppercase;
+}
+.newsletter input {
+  border: none;
+  border-radius: 5px;
+  background-color: #2d2d2d;
+  color: white;
+}
+.newsletter button {
+  background-color: whitesmoke;
+  color: red;
+  border: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: all 0.2s ease-in;
+  border-radius: 5px;
+}
+.newsletter button:hover {
+  color: wheat;
+  background-color: red;
+}
+/* newsletter end */
