@@ -4,7 +4,7 @@ import Carousel from "../components/Carousel";
 import Programs from "../components/Programs";
 import Newsletter from "../components/Newsletter";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <Navbar />
