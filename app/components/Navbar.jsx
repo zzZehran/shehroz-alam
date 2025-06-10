@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link";
 export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-black" data-bs-theme="dark">
@@ -38,7 +38,7 @@ export default function Navbar() {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown
+                Programs
               </a>
               <ul className="dropdown-menu">
                 <li>
@@ -77,6 +77,37 @@ export default function Navbar() {
               </a>
             </li>
           </ul>
+          <div className="d-flex">
+            <Link
+              href="https://www.youtube.com/channel/UCfCc7lBhsV4ez2cIjXYJv6A"
+              className="social-icon"
+            >
+              <span>
+                <i className="bi bi-youtube"></i>
+              </span>
+            </Link>
+            <Link
+              href="https://www.instagram.com/theshehrozalam"
+              className="social-icon"
+            >
+              <span>
+                <i class="bi bi-instagram"></i>
+              </span>
+            </Link>
+            <Link href="https://x.com/theshehrozalam" className="social-icon">
+              <span>
+                <i class="bi bi-twitter"></i>
+              </span>
+            </Link>
+            <Link
+              href="https://www.facebook.com/theshehrozalam"
+              className="social-icon"
+            >
+              <span>
+                <i class="bi bi-facebook"></i>
+              </span>
+            </Link>
+          </div>
         </div>
       </div>
     </nav>
