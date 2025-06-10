@@ -4,6 +4,7 @@ import Carousel from "../components/Carousel";
 import Programs from "../components/Programs";
 import Newsletter from "../components/Newsletter";
 import About from "../components/About";
+import Testimonials from "../components/Testimonials";
 
 export default function HomePage() {
   return (
@@ -13,6 +14,7 @@ export default function HomePage() {
       <Programs />
       <Newsletter />
       <About />
+      <Testimonials />
     </>
   );
 }

@@ -5,6 +5,9 @@
   font-family: "oswald", sans-serif;
   /* font-family: "Poppins", sans-serif; */
 }
+body {
+  background-color: #151515;
+}
 .carousel-item {
   height: 100vh;
   overflow: hidden;
@@ -214,5 +217,24 @@
   font-size: 0.9rem;
   color: rgb(123, 123, 123);
 }
-
 /* about end */
+
+/* testimonials start */
+.testimonials h2 {
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.testimonials p {
+  font-family: "Poppins";
+  text-align: center;
+  color: white;
+  font-size: 0.8rem;
+}
+.yt-video {
+  height: 50vh;
+}
+.yt-video iframe {
+  height: 100%;
+}
+/* testimonials end */
