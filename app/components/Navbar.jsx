@@ -91,12 +91,12 @@ export default function Navbar() {
               className="social-icon"
             >
               <span>
-                <i class="bi bi-instagram"></i>
+                <i className="bi bi-instagram"></i>
               </span>
             </Link>
             <Link href="https://x.com/theshehrozalam" className="social-icon">
               <span>
-                <i class="bi bi-twitter"></i>
+                <i className="bi bi-twitter"></i>
               </span>
             </Link>
             <Link
@@ -104,7 +104,7 @@ export default function Navbar() {
               className="social-icon"
             >
               <span>
-                <i class="bi bi-facebook"></i>
+                <i className="bi bi-facebook"></i>
               </span>
             </Link>
           </div>

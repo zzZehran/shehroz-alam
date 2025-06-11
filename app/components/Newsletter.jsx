@@ -8,9 +8,13 @@ export default function Newsletter() {
         of my Home Workout EBook.
       </h2>
       <form action="" className="row justify-content-around">
-        <input className="col-lg-4 px-3" type="text" placeholder="Name" />
-        <input className="col-lg-4 px-3" type="email" placeholder="Email" />
-        <button className="col-lg-2 px-3 py-2">SUBMIT</button>
+        <input className="col-4 col-lg-4 px-3" type="text" placeholder="Name" />
+        <input
+          className="col-4 col-lg-4 px-3"
+          type="email"
+          placeholder="Email"
+        />
+        <button className="col-3 col-lg-2 px-2 py-2">SUBMIT</button>
       </form>
     </div>
   );

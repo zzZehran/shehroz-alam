@@ -41,7 +41,7 @@ const Footer = () => {
                       className="social-icon"
                     >
                       <span>
-                        <i class="bi bi-instagram"></i>
+                        <i className="bi bi-instagram"></i>
                       </span>
                     </Link>
                     <Link
@@ -49,7 +49,7 @@ const Footer = () => {
                       className="social-icon"
                     >
                       <span>
-                        <i class="bi bi-twitter"></i>
+                        <i className="bi bi-twitter"></i>
                       </span>
                     </Link>
                     <Link
@@ -57,7 +57,7 @@ const Footer = () => {
                       className="social-icon"
                     >
                       <span>
-                        <i class="bi bi-facebook"></i>
+                        <i className="bi bi-facebook"></i>
                       </span>
                     </Link>
                   </div>

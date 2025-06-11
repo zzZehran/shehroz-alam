@@ -1,0 +1,82 @@
+@media (max-width: 1000px) {
+  /* carousel start */
+  .carousel-inner .overlay-container {
+    margin: 0;
+  }
+  .overlay-container h1 {
+    font-size: 3rem;
+  }
+  /* carousel end */
+  /* divider start */
+  .divider {
+    height: 25vh;
+  }
+  .divider h2 {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  /* divider end */
+  /* newsletter start */
+  .newsletter h2 {
+    font-size: 1rem;
+    width: 100%;
+  }
+  /* newsletter end */
+
+  /* about start */
+  .about .row {
+    margin: 0 1rem;
+    padding: 3rem 0;
+  }
+  .about h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+  }
+  .about h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    line-height: 25px;
+    font-size: 1rem;
+    /* letter-spacing: 0.2; */
+  }
+  .about p {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    line-height: 23px;
+  }
+  .about button {
+    margin-bottom: 3rem;
+  }
+  .about-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  .icon-card {
+    margin-bottom: 3rem;
+  }
+  .icon-card img {
+    margin-bottom: 1rem;
+  }
+  .icon-card h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .icon-card p {
+    font-family: "Poppins";
+    font-size: 0.9rem;
+    color: rgb(123, 123, 123);
+  }
+  /* about end */
+  .testimonials {
+    min-height: 100vh;
+  }
+  .yt-video div {
+    margin-bottom: 3rem;
+  }
+}

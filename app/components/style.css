@@ -16,6 +16,7 @@ nav .nav-link {
 }
 /* Navbar end */
 
+/* Carousel Start */
 .carousel-item {
   height: 100vh;
   overflow: hidden;
@@ -244,6 +245,7 @@ nav .nav-link {
 }
 .yt-video iframe {
   height: 100%;
+  width: 100%;
 }
 /* testimonials end */
 

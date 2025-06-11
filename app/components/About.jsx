@@ -22,12 +22,12 @@ export default function About() {
           <img src="/about.png" alt="Shehroz posing" />
         </div>
       </div>
-      <div className="row mt-5">
+      <div className="row mt-lg-5">
         <h3 className="mb-5">Why choose Shehroz Alam Fitness and Nutrition</h3>
         <div className="col-lg-4">
           <div className="icon-card">
             <img src="/icons/wallet.png" alt="" />
-            <h3 className="mb-4 mt-3">100% Money Back Guarantee</h3>
+            <h3 className="mb-lg-4 mt-3">100% Money Back Guarantee</h3>
             <p>
               If you feel like it's not your cup of tea, drop me a mail saying
               "it's not working out for me" and your "issue" and I'll refund the
@@ -38,7 +38,7 @@ export default function About() {
         <div className="col-lg-4">
           <div className="icon-card">
             <img src="/icons/time.png" alt="" />
-            <h3 className="mb-4 mt-3">One time learning - Save time!</h3>
+            <h3 className="mb-lg-4 mt-3">One time learning - Save time!</h3>
             <p>
               No more bullshiting with new diet and workout plans every month.
             </p>
@@ -47,7 +47,7 @@ export default function About() {
         <div className="col-lg-4">
           <div className="icon-card">
             <img src="/icons/pay.png" alt="" />
-            <h3 className="mb-4 mt-3">ONE TIME PAYMENT - SAVE MONEY!</h3>
+            <h3 className="mb-lg-4 mt-3">ONE TIME PAYMENT - SAVE MONEY!</h3>
             <p>
               No more making payments every month. Learn once, achieve for life.
             </p>
@@ -56,7 +56,7 @@ export default function About() {
         <div className="col-lg-4">
           <div className="icon-card">
             <img src="/icons/support.png" alt="" />
-            <h3 className="mb-4 mt-3">24 HOUR SUPPORT</h3>
+            <h3 className="mb-lg-4 mt-3">24 HOUR SUPPORT</h3>
             <p>
               Facebook Community Access to meet like minded people and Q&A,
               Whatsapp Support, Email Support.
@@ -66,7 +66,9 @@ export default function About() {
         <div className="col-lg-4">
           <div className="icon-card">
             <img src="/icons/goal.png" alt="" />
-            <h3 className="mb-4 mt-3">PERSONALIZED AND CUSTOMIZED SERVICES</h3>
+            <h3 className="mb-lg-4 mt-3">
+              PERSONALIZED AND CUSTOMIZED SERVICES
+            </h3>
             <p>Everything customized to your needs and goals.</p>
           </div>
         </div>
