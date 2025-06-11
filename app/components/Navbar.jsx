@@ -1,12 +1,11 @@
-import React from "react";
 import Link from "next/link";
 export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-black" data-bs-theme="dark">
       <div className="container">
-        <a className="navbar-brand" href="#">
+        <Link href={"/"} className="navbar-brand">
           <img src="/logo.png" alt="Bootstrap" width="300" height="60" />
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -21,14 +20,14 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
+              <Link className="nav-link" aria-current="page" href={"/"}>
                 HOME
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" href={"/about"}>
                 ABOUT ME
-              </a>
+              </Link>
             </li>
             <li className="nav-item dropdown">
               <a
@@ -38,43 +37,46 @@ export default function Navbar() {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Programs
+                PROGRAMS
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="#">
-                    Action
-                  </a>
+                  <Link
+                    className="dropdown-item"
+                    href={"/low_carb_high_performance"}
+                  >
+                    Low carb high perfomance crash course
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
-                    Another action
-                  </a>
+                  <Link
+                    className="dropdown-item"
+                    href={"/reverse_type_2_diabetes"}
+                  >
+                    Reverse Type 2 Diabetes Program
+                  </Link>
                 </li>
                 <li>
-                  <hr className="dropdown-divider" />
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Something else here
-                  </a>
+                  <Link className="dropdown-item" href={"/12_week_lean"}>
+                    12 Weeks Get Lean Program
+                  </Link>
                 </li>
               </ul>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" href={"/consultation"}>
                 CONSULTATION
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" href={"/blogs_videos"}>
                 BLOGS & VIDEOS
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" href={"/contact"}>
                 CONTACT
-              </a>
+              </Link>
             </li>
           </ul>
           <div className="d-flex">

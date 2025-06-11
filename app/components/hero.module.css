@@ -1,0 +1,28 @@
+.img_container {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(/about/about_hero.jpg);
+  background-size: cover;
+}
+.hero_overlay {
+  position: absolute;
+  color: white;
+}
+.hero_overlay h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 4rem;
+}
+.hero_overlay p {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+@media (max-width: 1000px) {
+  .img_container {
+    background-position: center;
+  }
+}

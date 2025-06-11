@@ -1,21 +1,13 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import styles from "./about.module.css";
+import styles from "./page.module.css";
+import Hero from "../components/Hero";
 export default function AboutPage() {
   return (
     <>
       <Navbar />
-      <div className="about_hero container-fluid p-0">
-        <div className={`${styles.img_container}`}>
-          <div className={`${styles.hero_overlay}`}>
-            <h2>ABOUT ME</h2>
-            <p>
-              <i className="bi bi-house-door-fill"></i> Home {">"} About Me
-            </p>
-          </div>
-        </div>
-      </div>
+      <Hero title="About Me" navigation={"About Me"} />
       <div className={`${styles.about_info} container my-5`}>
         <div className="row justify-content-center py-5">
           <div className="col-10 col-lg-8">

@@ -1,0 +1,23 @@
+.img_container {
+  height: 50vh;
+  position: relative;
+}
+.img_container img {
+  object-fit: cover;
+  border-radius: 20px;
+}
+.carbProgram_container {
+  color: white;
+}
+.strike_through {
+  text-decoration: line-through solid white;
+}
+.carbProgram_container button {
+  color: white;
+  background-color: transparent;
+  border: 1px solid red;
+  transition: background-color 0.2s ease-in;
+}
+.carbProgram_container button:hover {
+  background-color: red;
+}
