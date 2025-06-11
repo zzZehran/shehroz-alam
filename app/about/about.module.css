@@ -1,0 +1,61 @@
+.img_container {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(/about/about_hero.jpg);
+  background-size: cover;
+}
+.hero_overlay {
+  position: absolute;
+  color: white;
+}
+.hero_overlay h2 {
+  font-weight: 700;
+  font-size: 4rem;
+}
+.hero_overlay p {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+.about_info {
+  color: white;
+}
+.about_info h6 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 24px;
+}
+.about_info li {
+  margin-top: 2rem;
+}
+.vision {
+  height: 50vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(/about/vision.jpg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+.vision p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1000px) {
+  .img_container {
+    background-position: center;
+  }
+  .about_info li {
+    font-size: 0.875rem;
+  }
+  .vision {
+    height: 30vh;
+  }
+  .vision p {
+    font-size: 0.9rem;
+  }
+}

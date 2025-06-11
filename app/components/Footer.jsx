@@ -1,23 +1,24 @@
 import React from "react";
 import Link from "next/link";
 
+import styles from "./footer.module.css";
+
 const Footer = () => {
   return (
     <>
-      <footer className="custom-footer mt-5">
+      <footer className={`${styles.custom_footer} mt-5`}>
         <div className="container">
           <div className="row g-5">
             {/* Brand and Bio Section */}
             <div className="col-lg-5 col-md-12">
-              <div className="footer-brand-section">
-                {/* Logo Placeholder */}
+              <div className={styles.footer_brand_section}>
                 <div className="d-flex align-items-center mb-4">
-                  <div className="brand-logo">
+                  <div className={styles.brand_logo}>
                     <img src="/logo.png" alt="" />
                   </div>
                 </div>
 
-                <p className="bio-text mb-4">
+                <p className={`${styles.bio_text} mb-4`}>
                   As you know by now, my name is Shehroz Alam. Proud Kashmiri
                   born in a family of enterpreneurs, father to the best cat in
                   the world. A Commerce graduate, turned Fitness Coach, a
@@ -25,12 +26,12 @@ const Footer = () => {
                 </p>
 
                 {/* Social Media Links */}
-                <div className="social-section">
-                  <h4 className="social-title">FOLLOW US</h4>
+                <div className={styles.social_section}>
+                  <h4 className={styles.social_title}>FOLLOW US</h4>
                   <div className="d-flex gap-3">
                     <Link
                       href="https://www.youtube.com/channel/UCfCc7lBhsV4ez2cIjXYJv6A"
-                      className="social-icon"
+                      className={styles.social_icon}
                     >
                       <span>
                         <i className="bi bi-youtube"></i>
@@ -38,7 +39,7 @@ const Footer = () => {
                     </Link>
                     <Link
                       href="https://www.instagram.com/theshehrozalam"
-                      className="social-icon"
+                      className={styles.social_icon}
                     >
                       <span>
                         <i className="bi bi-instagram"></i>
@@ -46,7 +47,7 @@ const Footer = () => {
                     </Link>
                     <Link
                       href="https://x.com/theshehrozalam"
-                      className="social-icon"
+                      className={styles.social_icon}
                     >
                       <span>
                         <i className="bi bi-twitter"></i>
@@ -54,7 +55,7 @@ const Footer = () => {
                     </Link>
                     <Link
                       href="https://www.facebook.com/theshehrozalam"
-                      className="social-icon"
+                      className={styles.social_icon}
                     >
                       <span>
                         <i className="bi bi-facebook"></i>
@@ -67,16 +68,16 @@ const Footer = () => {
 
             {/* Navigation Links */}
             <div className="col-lg-3 col-md-6">
-              <div className="footer-nav-section">
-                <h3 className="section-title">MORE</h3>
-                <nav className="footer-nav">
-                  <Link href="/" className="nav-link">
+              <div className={styles.footer_nav_section}>
+                <h3 className={styles.section_title}>MORE</h3>
+                <nav className={styles.footer_nav}>
+                  <Link href="/" className={styles.nav_link}>
                     Home
                   </Link>
-                  <Link href="/privacy" className="nav-link">
+                  <Link href="/privacy" className={styles.nav_link}>
                     Privacy Policy
                   </Link>
-                  <Link href="/terms" className="nav-link">
+                  <Link href="/terms" className={styles.nav_link}>
                     Terms & Conditions
                   </Link>
                 </nav>
@@ -85,30 +86,32 @@ const Footer = () => {
 
             {/* Contact Information */}
             <div className="col-lg-4 col-md-6">
-              <div className="footer-contact-section">
-                <h3 className="section-title">GET INFO</h3>
-                <div className="contact-info">
-                  <div className="contact-item">
-                    <span className="contact-icon">📞</span>
-                    <div className="contact-details">
-                      <p className="contact-label">Phone:</p>
-                      <p className="contact-value">(+91) 9910772367</p>
+              <div className={styles.footer_contact_section}>
+                <h3 className={styles.section_title}>GET INFO</h3>
+                <div className={styles.contact_info}>
+                  <div className={styles.contact_item}>
+                    <span className={styles.contact_icon}>📞</span>
+                    <div className={styles.contact_details}>
+                      <p className={styles.contact_label}>Phone:</p>
+                      <p className={styles.contact_value}>(+91) 9910772367</p>
                     </div>
                   </div>
 
-                  <div className="contact-item">
-                    <span className="contact-icon">✉️</span>
-                    <div className="contact-details">
-                      <p className="contact-label">Email:</p>
-                      <p className="contact-value">info@shehrozalam.com</p>
+                  <div className={styles.contact_item}>
+                    <span className={styles.contact_icon}>✉️</span>
+                    <div className={styles.contact_details}>
+                      <p className={styles.contact_label}>Email:</p>
+                      <p className={styles.contact_value}>
+                        info@shehrozalam.com
+                      </p>
                     </div>
                   </div>
 
-                  <div className="contact-item">
-                    <span className="contact-icon">📍</span>
-                    <div className="contact-details">
-                      <p className="contact-label">Address</p>
-                      <p className="contact-value">
+                  <div className={styles.contact_item}>
+                    <span className={styles.contact_icon}>📍</span>
+                    <div className={styles.contact_details}>
+                      <p className={styles.contact_label}>Address</p>
+                      <p className={styles.contact_value}>
                         New Friends Colony, Delhi-
                         <br />
                         IND
@@ -123,10 +126,10 @@ const Footer = () => {
           {/* Copyright Section */}
           <div className="row">
             <div className="col-12">
-              <div className="copyright-section">
-                <p className="copyright-text">
+              <div className={styles.copyright_section}>
+                <p className={styles.copyright_text}>
                   Copyright ©2025 All rights reserved | Powered By
-                  <Link href="#" className="copyright-link ms-1">
+                  <Link href="#" className={`${styles.copyright_link} ms-1`}>
                     Zehran
                   </Link>
                 </p>
