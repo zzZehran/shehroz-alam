@@ -1,0 +1,15 @@
+.yt_container {
+  height: 50vh;
+}
+.yt_container iframe {
+  height: 100%;
+  width: 100%;
+}
+.diabetes .quote {
+  color: #f1c40f;
+  font-size: 4rem;
+  font-weight: 700;
+}
+.diabetes_info {
+  color: white;
+}

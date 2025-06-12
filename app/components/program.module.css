@@ -21,3 +21,8 @@
 .program_container button:hover {
   background-color: red;
 }
+.program_info {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
