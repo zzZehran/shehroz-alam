@@ -1,0 +1,11 @@
+.consultation_container {
+  color: white;
+}
+.consultation_container p {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+}
+
+.consultation_container h2 {
+  color: red;
+}
