@@ -1,0 +1,34 @@
+.contact_info h3 {
+  color: red;
+  font-size: 3rem;
+}
+.contact_info i {
+  color: red;
+  margin-right: 1rem;
+}
+.social_icon i {
+  color: white;
+}
+.contact_form {
+  color: white;
+}
+.contact_form form {
+  background-color: transparent;
+}
+.contact_form input,
+.contact_form textarea {
+  border-radius: 0px;
+  background-color: #2d2d2d;
+  border: none;
+  padding: 1rem;
+}
+.contact_form input::placeholder,
+textarea::placeholder {
+  color: #999 !important;
+  opacity: 1; /* full opacity (default is usually lower in some browsers) */
+}
+.contact_form button {
+  border-radius: 0;
+  background: linear-gradient(to right, #e16521, #e4381c);
+  color: white;
+}
