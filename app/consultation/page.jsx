@@ -1,6 +1,7 @@
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
+import BookingTable from "../table/page";
 import styles from "./page.module.css";
 export default function page() {
   return (
@@ -20,6 +21,7 @@ export default function page() {
         </p>
         <h2>Personal Consultation with Shehroz 30 minutes @Rs 199</h2>
       </div>
+      <BookingTable />
 
       <Footer />
     </>
