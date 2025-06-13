@@ -23,7 +23,7 @@
   padding: 1rem;
 }
 .contact_form input::placeholder,
-textarea::placeholder {
+.contact_form textarea::placeholder {
   color: #999 !important;
   opacity: 1; /* full opacity (default is usually lower in some browsers) */
 }
