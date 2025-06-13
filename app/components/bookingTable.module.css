@@ -1,0 +1,90 @@
+.container {
+  background-color: #121212;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.scrollButton {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  transition: 0.3s;
+}
+
+.scrollButton:hover {
+  color: #ff5722;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.table th,
+.table td {
+  text-align: center;
+  padding: 0.5rem;
+  border: 1px solid #222;
+  background-color: #222;
+  color: white;
+  width: 20%; /* 5 columns */
+}
+
+.dayName {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.dayDate {
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+  color: #aaa;
+}
+
+.slot {
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.timeText {
+  z-index: 1;
+}
+
+.bookNow {
+  opacity: 0;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.slot:hover {
+  background: linear-gradient(90deg, #ff5722, #ff7043);
+  color: #fff;
+  font-weight: 600;
+}
+
+.slot:hover .bookNow {
+  opacity: 1;
+}
+
+.activeSlot {
+  background: linear-gradient(90deg, #ff5722, #ff7043);
+  color: #fff;
+  font-weight: 600;
+}
