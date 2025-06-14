@@ -1,8 +1,8 @@
-import Footer from "@/app/components/Footer";
-import Hero from "@/app/components/Hero";
-import Navbar from "@/app/components/Navbar";
-import Program from "@/app/components/Program";
-import Testimonials from "@/app/components/Testimonials";
+import Footer from "@/app/(components)/Footer";
+import Hero from "@/app/(components)/Hero";
+import Navbar from "@/app/(components)/Navbar";
+import Program from "@/app/(components)/Program";
+import Testimonials from "@/app/(components)/Testimonials";
 
 import styles from "./page.module.css";
 export default function page() {

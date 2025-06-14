@@ -1,7 +1,7 @@
-import Footer from "../components/Footer";
-import Hero from "../components/Hero";
-import Navbar from "../components/Navbar";
-import BookingTable from "../components/bookingTable";
+import Footer from "../(components)/Footer";
+import Hero from "../(components)/Hero";
+import Navbar from "../(components)/Navbar";
+import BookingTable from "../(components)/bookingTable";
 import styles from "./page.module.css";
 export default function page() {
   return (

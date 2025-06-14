@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "../(components)/Navbar";
+import Footer from "../(components)/Footer";
 import styles from "./page.module.css";
-import Hero from "../components/Hero";
+import Hero from "../(components)/Hero";
 export default function AboutPage() {
   return (
     <>
