@@ -69,7 +69,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href={"/blogs_videos"}>
+              <Link className="nav-link" href={"/blogs"}>
                 BLOGS & VIDEOS
               </Link>
             </li>
