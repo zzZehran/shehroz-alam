@@ -1,0 +1,26 @@
+.blog_container h1 {
+  font-size: 5rem;
+}
+.blog_container .prose {
+  color: orangered;
+}
+.blog_container p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.img_container {
+  position: relative;
+  height: 50vh;
+  border-radius: 20px;
+}
+.img_container img {
+  object-fit: cover;
+  border-radius: inherit;
+}
+.sanity_imgs {
+  position: relative;
+  height: 50vh;
+}
+.sanity_imgs img {
+  object-fit: contain;
+}

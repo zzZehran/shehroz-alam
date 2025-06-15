@@ -1,3 +1,55 @@
 .blog {
   color: white;
 }
+.blog_container {
+  height: 50vh;
+  border-radius: 20px;
+}
+.blog_container .bgImg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 1rem 3rem;
+  position: relative;
+  height: 100%;
+}
+/* .blog_container .bgImg:nth-of-type(1) {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/blogs/blog_1.jpg);
+}
+.blog_container .bgImg:nth-of-type(2n) {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/blogs/blog_2.jpg);
+} */
+.blog_title h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  /* text-align: center; */
+}
+/* .blog_title button {
+  font-family: "Poppins", sans-serif;
+  background-color: transparent;
+  border: 1px solid orangered;
+  font-size: 0.9rem;
+  padding: 0.5rem 1.5rem;
+} */
+.blog_overlay {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, #e16521, #e4381c);
+  padding: 0.3rem 1rem;
+  border-top-left-radius: 20px;
+  transition: padding 0.2s ease-in;
+}
+.blog_overlay:hover {
+  background: linear-gradient(to right, #cf4c05, #c91b00);
+  padding: 0.4rem 1.2rem;
+}

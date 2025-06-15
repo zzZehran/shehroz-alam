@@ -1,35 +1,51 @@
 import Link from "next/link";
-import { SanityDocument } from "next-sanity";
-
+import Image from "next/image";
 import { client } from "../sanity/client";
 
+import Navbar from "../(components)/Navbar";
 import styles from "./page.module.css";
+import Hero from "../(components)/Hero";
+import Footer from "../(components)/Footer";
 
 const POSTS_QUERY = `*[
   _type == "post"
   && defined(slug.current)
-]|order(publishedAt desc)[0...12]{_id, title, slug, publishedAt}`;
+]|order(publishedAt desc)[0...12]{_id, title, slug, publishedAt, "imageUrl": mainImage.asset->url}`;
 
 const options = { next: { revalidate: 30 } };
 
 export default async function IndexPage() {
   const posts = await client.fetch(POSTS_QUERY, {}, options);
-
   return (
-    <main
-      className={`${styles.blog} container mx-auto min-h-screen max-w-3xl p-8`}
-    >
-      <h1 className="text-4xl font-bold mb-8">Posts</h1>
-      <ul className="flex flex-col gap-y-4">
-        {posts.map((post) => (
-          <li className="hover:underline" key={post._id}>
-            <Link href={`/${post.slug.current}`}>
-              <h2 className="text-xl font-semibold">{post.title}</h2>
-              <p>{new Date(post.publishedAt).toLocaleDateString()}</p>
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </main>
+    <>
+      <Navbar />
+      <Hero title={"Blogs & Videos"} navigation={"Blogs & Videos"} />
+      <main className={`${styles.blog} px-5 my-5`}>
+        <div className="container">
+          <div className={`${styles.blog_container} row`}>
+            {posts.map((post) => (
+              <div key={post._id} className="col-lg-4">
+                <div
+                  className={styles.bgImg}
+                  style={{
+                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${post.imageUrl})`,
+                  }}
+                >
+                  <div className={`${styles.blog_title}`}>
+                    <h2>{post.title}</h2>
+                    <Link href={`/${post.slug.current}`}>
+                      <div className={`${styles.blog_overlay}`}>
+                        <i className="bi bi-arrow-right"></i>
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </main>
+      <Footer />
+    </>
   );
 }
