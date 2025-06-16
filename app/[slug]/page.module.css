@@ -8,6 +8,11 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
+.blog_container a {
+  font-family: "Poppins", sans-serif;
+  color: gray;
+  text-decoration: none;
+}
 .img_container {
   position: relative;
   height: 50vh;
