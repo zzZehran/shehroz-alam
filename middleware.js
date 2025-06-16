@@ -6,6 +6,6 @@ export default withAuth({
   loginPath: "/api/auth/login",
 });
 
-// export const config = {
-//   matcher: ["/studio/:path*"],
-// };
+export const config = {
+  matcher: ["/studio/:path*"],
+};
