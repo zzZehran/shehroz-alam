@@ -4,7 +4,7 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg bg-black" data-bs-theme="dark">
       <div className="container">
         <Link href={"/"} className="navbar-brand">
-          <img src="/logo.png" alt="Bootstrap" width="300" height="60" />
+          <img src="/logo.png" alt="logo" />
         </Link>
         <button
           className="navbar-toggler"

@@ -1,7 +1,15 @@
 @media (max-width: 1000px) {
-  /* carousel start */
+  /* Navbar start */
+  nav .navbar-brand {
+    width: 70%;
+  }
+  /* Carousel Start */
+  .carousel-item {
+    height: 700px;
+    overflow: hidden;
+  }
   .carousel-inner .overlay-container {
-    margin: 0;
+    margin-left: auto;
   }
   .overlay-container h1 {
     font-size: 3rem;

@@ -20,7 +20,7 @@ export default function Carousel() {
           />
         </div>
         <div className="carousel-item" data-bs-internval="1000">
-          <div className="container overlay-container">
+          <div className="container overlay-container mx-auto">
             <h1>PHYSICAL WEAKNESS IS A SYMPTOM OF MENTAL WEAKNESS</h1>
           </div>
           <img

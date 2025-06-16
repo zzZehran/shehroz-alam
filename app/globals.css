@@ -12,6 +12,12 @@ body {
 }
 
 /* Navbar start */
+nav .navbar-brand {
+  width: 25%;
+}
+.navbar-brand img {
+  width: 100%;
+}
 nav .nav-link {
   font-family: "Poppins", sans-serif;
   font-size: 0.9rem;
@@ -51,7 +57,7 @@ nav .nav-link {
 
 /* Carousel Start */
 .carousel-item {
-  height: 100vh;
+  height: 100svh;
   overflow: hidden;
 }
 .carousel-item img {
