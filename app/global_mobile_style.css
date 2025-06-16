@@ -11,8 +11,9 @@
   .carousel-inner .overlay-container {
     margin-left: auto;
   }
-  .overlay-container h1 {
+  .overlay-container h2 {
     font-size: 3rem;
+    text-align: center;
   }
   /* carousel end */
   /* divider start */

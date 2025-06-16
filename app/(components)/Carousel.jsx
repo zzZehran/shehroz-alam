@@ -11,7 +11,7 @@ export default function Carousel() {
       <div className="carousel-inner">
         <div className="carousel-item active" data-bs-internval="1000">
           <div className="container overlay-container">
-            <h1>DAY ONE OR ONE DAY, YOU DECIDE</h1>
+            <h2>DAY ONE OR ONE DAY, YOU DECIDE</h2>
           </div>
           <img
             src="/carousel/img_1.jpg"
@@ -21,7 +21,7 @@ export default function Carousel() {
         </div>
         <div className="carousel-item" data-bs-internval="1000">
           <div className="container overlay-container mx-auto">
-            <h1>PHYSICAL WEAKNESS IS A SYMPTOM OF MENTAL WEAKNESS</h1>
+            <h2>PHYSICAL WEAKNESS IS A SYMPTOM OF MENTAL WEAKNESS</h2>
           </div>
           <img
             src="/carousel/img_2.jpg"
@@ -31,7 +31,7 @@ export default function Carousel() {
         </div>
         <div className="carousel-item" data-bs-internval="1000">
           <div className="container overlay-container">
-            <h1>BUILD MODEL FIGURE WITH MASTER TRAINER SHEHROZ</h1>
+            <h2>BUILD MODEL FIGURE WITH MASTER TRAINER SHEHROZ</h2>
           </div>
           <img
             src="/carousel/img_3.jpg"
