@@ -10,7 +10,7 @@ export default function Carousel() {
     >
       <div className="carousel-inner">
         <div className="carousel-item active" data-bs-internval="1000">
-          <div className="container overlay-container">
+          <div className="overlay-container">
             <h2>DAY ONE OR ONE DAY, YOU DECIDE</h2>
           </div>
           <img

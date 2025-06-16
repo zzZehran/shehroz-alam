@@ -73,7 +73,7 @@ nav .nav-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 5rem 0 5rem;
+  padding: 0 5rem 0 5rem;
 }
 
 .overlay-container h2 {
