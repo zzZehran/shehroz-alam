@@ -93,7 +93,14 @@ const Footer = () => {
                     <span className={styles.contact_icon}>📞</span>
                     <div className={styles.contact_details}>
                       <p className={styles.contact_label}>Phone:</p>
-                      <p className={styles.contact_value}>(+91) 9910772367</p>
+                      <p className={styles.contact_value}>
+                        <Link
+                          href="tel:919910772367"
+                          className="text-decoration-none text-white"
+                        >
+                          (+91) 9910772367
+                        </Link>
+                      </p>
                     </div>
                   </div>
 
@@ -102,7 +109,12 @@ const Footer = () => {
                     <div className={styles.contact_details}>
                       <p className={styles.contact_label}>Email:</p>
                       <p className={styles.contact_value}>
-                        info@shehrozalam.com
+                        <Link
+                          href="mailto:info@shehrozalam.com"
+                          className="text-decoration-none text-white"
+                        >
+                          info@shehrozalam.com
+                        </Link>
                       </p>
                     </div>
                   </div>
