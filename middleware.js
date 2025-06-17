@@ -2,7 +2,7 @@ import { withAuth } from "@kinde-oss/kinde-auth-nextjs/middleware";
 
 export default withAuth({
   // Protect any routes that start with /studio
-  protectedRoutes: ["/studio/:path"],
+  protectedRoutes: ["/studio/"],
   loginPath: "/api/auth/login",
 });
 
