@@ -4,6 +4,7 @@ import Navbar from "@/app/(components)/Navbar";
 import Program from "@/app/(components)/Program";
 import Testimonials from "@/app/(components)/Testimonials";
 import styles from "./page.module.css";
+import Image from "next/image";
 
 export default function page() {
   const programInfo = `Your diabetes diet is simply a healthy-eating plan that will help
@@ -137,32 +138,111 @@ export default function page() {
                 <h2>What Does This Program Include?</h2>
               </header>
 
-              <ul>
-                <li>Custom Nutrition Plan (Veg and Non-Veg) to Get Shredded</li>
-                <li>Training Program to Increase Muscle and Strength</li>
-                <li>Supplements Plan for Your Needs</li>
-                <li>Video Demonstration of All Recipes to Simplify Cooking</li>
+              <ul className={`${styles.icon_list} mt-4 p-0`}>
                 <li>
+                  <span className={`${styles.icon_container}`}>
+                    <Image
+                      src="/program_icons/content_salad.png"
+                      fill={true}
+                      alt="salad icon"
+                    />
+                  </span>
+                  {/* <img src="/program_icons/content_salad.png" alt="" /> Custom */}
+                  Nutrition Plan (Veg and Non-Veg) to Get Shredded
+                </li>
+                <li>
+                  <span className={`${styles.icon_container}`}>
+                    <Image
+                      src="/program_icons/content_gym.png"
+                      fill={true}
+                      alt="gym weights icon"
+                    />
+                  </span>
+                  Training Program to Increase Muscle and Strength
+                </li>
+                <li>
+                  <span className={`${styles.icon_container}`}>
+                    <Image
+                      src="/program_icons/content_supplement.png"
+                      fill={true}
+                      alt="medicine icon"
+                    />
+                  </span>
+                  Supplements Plan for Your Needs
+                </li>
+                <li>
+                  <span className={`${styles.icon_container}`}>
+                    <Image
+                      src="/program_icons/content_cinema.png"
+                      fill={true}
+                      alt="video camera icon"
+                    />
+                  </span>
+                  Video Demonstration of All Recipes to Simplify Cooking
+                </li>
+                <li>
+                  <span className={`${styles.icon_container}`}>
+                    <Image
+                      src="/program_icons/content_training.png"
+                      fill={true}
+                      alt="stick figure lifting weights icon"
+                    />
+                  </span>
                   Exercise Video Demonstration with Correct Cues (Key Exercises,
                   Rep Ranges, Number of Sets, Rest Period)
                 </li>
                 <li>
+                  <span className={`${styles.icon_container}`}>
+                    <Image
+                      src="/program_icons/content_whatsapp.png"
+                      fill={true}
+                      alt="messaging app icon"
+                    />
+                  </span>
                   1-on-1 Email Communication & Progress Monitoring on Facebook
                   Community Group
                 </li>
                 <li>
+                  <span className={`${styles.icon_container}`}>
+                    <Image
+                      src="/program_icons/content_manual.png"
+                      fill={true}
+                      alt="guide manual icon"
+                    />
+                  </span>
                   <strong>Bonus #1:</strong> Mobility / Flexibility Guide (Video
                   Demonstration)
                 </li>
                 <li>
+                  <span className={`${styles.icon_container}`}>
+                    <Image
+                      src="/program_icons/content_faq.png"
+                      fill={true}
+                      alt="FAQ icon"
+                    />
+                  </span>
                   <strong>Bonus #2:</strong> Access to Facebook Community Group
                   for Q&A, Form Feedback, Monthly Progress Sharing, and
                   Networking with Like-Minded People
                 </li>
                 <li>
+                  <span className={`${styles.icon_container}`}>
+                    <Image
+                      src="/program_icons/content_market.png"
+                      fill={true}
+                      alt="basket icon"
+                    />
+                  </span>
                   <strong>Bonus #3:</strong> Grocery Shopping List
                 </li>
                 <li>
+                  <span className={`${styles.icon_container}`}>
+                    <Image
+                      src="/program_icons/content_money.png"
+                      fill={true}
+                      alt="wallet icon"
+                    />
+                  </span>
                   100% Money-Back Guarantee: If you're not satisfied, simply
                   email your concern and my team will refund the full amount.
                 </li>
@@ -189,7 +269,7 @@ export default function page() {
                 <h2>What You Can Expect After 12 Weeks Transformation</h2>
               </header>
 
-              <ul>
+              <ul className="">
                 <li>
                   <strong>Normal Blood Glucose:</strong> You'll feel your body
                   functioning normally again.

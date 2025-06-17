@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./program.module.css";
 export default function Program({
   programImageName,
@@ -33,10 +34,26 @@ export default function Program({
                   </span>
                 </span>
               </h4>
-              <button className="px-4 py-2 mt-3">BOOK NOW</button>
+              <button className="px-4 py-2 mt-3">
+                <Link
+                  href={"https://rzp.io/rzp/Rfwhtww"}
+                  className="text-decoration-none text-white"
+                >
+                  BOOK NOW
+                </Link>
+              </button>
             </>
           )}
-          {!showPrice && <button className="px-4 py-2 mt-3">GET QUOTE</button>}
+          {!showPrice && (
+            <button className="px-4 py-2 mt-3">
+              <Link
+                href={"https://rzp.io/rzp/Rfwhtww"}
+                className="text-decoration-none text-white"
+              >
+                GET QUOTE
+              </Link>
+            </button>
+          )}
           <p className={`${styles.program_info} mt-5`}>{programInfo}</p>
         </div>
       </div>

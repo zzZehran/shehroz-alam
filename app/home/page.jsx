@@ -5,12 +5,13 @@ import Testimonials from "../(components)/Testimonials";
 import Footer from "../(components)/Footer";
 
 import Image from "next/image";
+import Link from "next/link";
+
 export default function HomePage() {
   return (
     <>
       <Navbar />
       <Carousel />
-
       {/* Divider start */}
       <div className="divider container-fluid">
         <h2>CHOOSE YOUR PROGRAM</h2>
@@ -27,20 +28,41 @@ export default function HomePage() {
               A 7-day crash course that teaches you everything you need to know
               to get started with the low carb diet.
             </p>
-            <button className="py-2 px-4">BUY NOW</button>
+            <button className="py-2 px-4">
+              <Link
+                href={"/low_carb_high_performance"}
+                className="text-decoration-none text-white"
+              >
+                BUY NOW
+              </Link>
+            </button>
           </div>
           <div className="program col-lg-4">
-            <h3 className="mb-3">LOW CARB, HIGH PERFORMANCE CRASH COURSE</h3>
+            <h3 className="mb-3">Reverse Type II Diabetes Program</h3>
             <p className="mb-4">
               Reverse Type II Diabetes naturally by Correct Nutrition and live
               Medicine Free Life Again!
             </p>
-            <button className="py-2 px-4">BUY NOW</button>
+            <button className="py-2 px-4">
+              <Link
+                href={"/reverse_type_2_diabetes"}
+                className="text-decoration-none text-white"
+              >
+                BUY NOW
+              </Link>
+            </button>
           </div>
           <div className="program col-lg-4">
-            <h3 className="mb-3">LOW CARB, HIGH PERFORMANCE CRASH COURSE</h3>
+            <h3 className="mb-3">12 WEEK GET LEAN PROGRAME</h3>
             <p className="mb-4">PACK MUSCLES AND LOSE FAT AT THE SAME TIME</p>
-            <button className="py-2 px-4">BUY NOW</button>
+            <button className="py-2 px-4">
+              <Link
+                href={"/12_week_lean"}
+                className="text-decoration-none text-white"
+              >
+                BUY NOW
+              </Link>
+            </button>
           </div>
         </div>
       </div>
@@ -82,7 +104,12 @@ export default function HomePage() {
               stronger, shredded and correct metabolic diseases like Type II
               Diabetes, High BP, High Triglycerides by Training and Nutrition.
             </p>
-            <button className="px-3 py-2">READ MORE</button>
+            <button className="px-3 py-2">
+              {" "}
+              <Link href={"/about"} className="text-decoration-none text-white">
+                BUY NOW
+              </Link>
+            </button>
           </div>
           <div className="about-img col-lg-6">
             <Image src="/about.png" fill={true} alt="Shehroz posing" />

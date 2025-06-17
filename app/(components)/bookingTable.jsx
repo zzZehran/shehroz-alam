@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 import styles from "./bookingTable.module.css";
 
 const BookingTable = () => {
@@ -91,7 +92,15 @@ const BookingTable = () => {
                       onClick={() => handleSlotClick(d.fullDate, time)}
                     >
                       <div className={styles.timeText}>{time}</div>
-                      <div className={styles.bookNow}>Book Now</div>
+                      <div className={styles.bookNow}>
+                        {" "}
+                        <Link
+                          href={"https://rzp.io/rzp/Rfwhtww"}
+                          className="text-decoration-none text-white"
+                        >
+                          BOOK NOW
+                        </Link>
+                      </div>
                     </td>
                   );
                 })}

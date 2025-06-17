@@ -13,3 +13,29 @@
 .diabetes_info {
   color: white;
 }
+.diabetes ul {
+  list-style: none;
+}
+
+.icon_list li {
+  display: flex; /* Make the li a flex container */
+  align-items: center; /* Vertically center the icon and text */
+  font-size: 1rem;
+  color: #f1c40f;
+  margin-top: 1rem;
+  gap: 1rem; /* Add spacing between icon and text */
+}
+.icon_list li strong {
+  color: #f1c40f;
+}
+.icon_container {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+.icon_container img {
+  object-fit: contain;
+}

@@ -29,3 +29,31 @@
 .sanity_imgs img {
   object-fit: contain;
 }
+.related_post {
+  height: 35vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  display: flex;
+  /* justify-content: end; */
+  align-items: end;
+  position: relative;
+}
+.related_post h6 {
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+}
+.blog_overlay {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, #e16521, #e4381c);
+
+  padding: 0.3rem 1rem;
+  border-top-left-radius: 20px;
+  transition: padding 0.2s ease-in;
+}
+.blog_overlay:hover {
+  background: linear-gradient(to right, #cf4c05, #c91b00);
+  padding: 0.4rem 1.2rem;
+}
