@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formspree/react": "^3.0.0",
     "@kinde-oss/kinde-auth-nextjs": "^2.7.0",
     "@popperjs/core": "^2.11.8",
     "@sanity/icons": "^3.7.0",

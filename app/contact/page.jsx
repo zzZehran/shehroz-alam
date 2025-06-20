@@ -1,9 +1,14 @@
+"use client";
 import Footer from "../(components)/Footer";
 import Navbar from "../(components)/Navbar";
 import Hero from "../(components)/Hero";
 import styles from "./page.module.css";
 
+import React from "react";
+import { useForm, ValidationError } from "@formspree/react";
 export default function page() {
+  const [state, handleSubmit] = useForm("mldnwlgw");
+  console.log(state);
   return (
     <>
       <Navbar />
@@ -67,7 +72,54 @@ export default function page() {
           <div className={`col-md-7 ${styles.contact_form}`}>
             <div className="p-4 rounded">
               <h3 className="mb-4">Get In Touch</h3>
-              <form>
+              {state.submitting && (
+                <div
+                  className="alert alert-success d-flex justify-content-between"
+                  role="alert"
+                >
+                  Loading...
+                  <button
+                    type="button"
+                    className="btn-close"
+                    data-bs-dismiss="alert"
+                    aria-label="Close"
+                  ></button>
+                </div>
+              )}
+              <div>
+                {state.errors && (
+                  <div
+                    className="alert alert-danger d-flex justify-content-between"
+                    role="alert"
+                  >
+                    {/* Message sent successfully! */}
+                    {state.errors.kind.toUpperCase()}
+                    <button
+                      type="button"
+                      className="btn-close"
+                      data-bs-dismiss="alert"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                )}
+              </div>
+              {state.succeeded && (
+                <div
+                  className="alert alert-success d-flex justify-content-between"
+                  role="alert"
+                >
+                  {/* Message sent successfully! */}
+                  {state.result.kind.toUpperCase()}
+                  <button
+                    type="button"
+                    className="btn-close"
+                    data-bs-dismiss="alert"
+                    aria-label="Close"
+                  ></button>
+                </div>
+              )}
+
+              <form onSubmit={handleSubmit}>
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="mb-3">
@@ -75,10 +127,16 @@ export default function page() {
                         Name
                       </label>
                       <input
+                        name="name"
                         type="text"
                         className="form-control"
                         id="name"
                         placeholder="Your Name"
+                      />
+                      <ValidationError
+                        prefix="Name"
+                        field="name"
+                        errors={state.errors}
                       />
                     </div>
                   </div>
@@ -89,9 +147,15 @@ export default function page() {
                       </label>
                       <input
                         type="email"
+                        name="email"
                         className="form-control"
                         id="email"
                         placeholder="name@example.com"
+                      />
+                      <ValidationError
+                        prefix="Email"
+                        field="email"
+                        errors={state.errors}
                       />
                     </div>
                   </div>
@@ -103,13 +167,22 @@ export default function page() {
                   </label>
                   <textarea
                     className="form-control"
+                    name="message"
                     id="message"
                     rows="5"
                     placeholder="Your Message"
-                  ></textarea>
+                  ></textarea>{" "}
+                  <ValidationError
+                    prefix="Message"
+                    field="message"
+                    errors={state.errors}
+                  />
                 </div>
 
-                <button type="submit" className="btn px-4 py-2">
+                <button
+                  type="submit"
+                  className={`${styles.submit_btn} btn px-4 py-2`}
+                >
                   Send Message
                 </button>
               </form>

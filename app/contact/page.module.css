@@ -27,7 +27,7 @@
   color: #999 !important;
   opacity: 1; /* full opacity (default is usually lower in some browsers) */
 }
-.contact_form button {
+.contact_form .submit_btn {
   border-radius: 0;
   background: linear-gradient(to right, #e16521, #e4381c);
   color: white;
