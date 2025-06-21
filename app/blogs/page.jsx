@@ -23,15 +23,15 @@ export default async function IndexPage() {
         <div className="container">
           <div className={`${styles.blog_container} row`}>
             {posts.map((post) => (
-              <div key={post._id} className="col-lg-4">
+              <div key={post._id} className="col-6 col-lg-4 mt-4">
                 <div
-                  className={styles.bgImg}
+                  className={`${styles.bgImg} px-3 px-lg-5 pb-3`}
                   style={{
                     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${post.imageUrl})`,
                   }}
                 >
                   <div className={`${styles.blog_title}`}>
-                    <h2>{post.title}</h2>
+                    <h2 className="fs-3">{post.title}</h2>
                     <Link href={`/${post.slug.current}`}>
                       <div className={`${styles.blog_overlay}`}>
                         <i className="bi bi-arrow-right"></i>
