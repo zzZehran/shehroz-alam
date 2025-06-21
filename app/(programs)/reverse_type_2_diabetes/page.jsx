@@ -77,7 +77,7 @@ export default function page() {
               <p>
                 <strong>
                   Type 2 diabetes affects every organ in the body.
-                </strong>{" "}
+                </strong>
                 What happens when excessive glucose piles up in the body over
                 10-20 years? Every cell in the body starts to rot, which is
                 precisely why type 2 diabetes, unlike virtually any other
@@ -143,18 +143,19 @@ export default function page() {
                   <span className={`${styles.icon_container}`}>
                     <Image
                       src="/program_icons/content_salad.png"
-                      fill={true}
+                      height={50}
+                      width={50}
                       alt="salad icon"
                     />
                   </span>
-                  {/* <img src="/program_icons/content_salad.png" alt="" /> Custom */}
                   Nutrition Plan (Veg and Non-Veg) to Get Shredded
                 </li>
                 <li>
                   <span className={`${styles.icon_container}`}>
                     <Image
                       src="/program_icons/content_gym.png"
-                      fill={true}
+                      height={50}
+                      width={50}
                       alt="gym weights icon"
                     />
                   </span>
@@ -164,7 +165,8 @@ export default function page() {
                   <span className={`${styles.icon_container}`}>
                     <Image
                       src="/program_icons/content_supplement.png"
-                      fill={true}
+                      height={50}
+                      width={50}
                       alt="medicine icon"
                     />
                   </span>
@@ -174,7 +176,8 @@ export default function page() {
                   <span className={`${styles.icon_container}`}>
                     <Image
                       src="/program_icons/content_cinema.png"
-                      fill={true}
+                      height={50}
+                      width={50}
                       alt="video camera icon"
                     />
                   </span>
@@ -184,7 +187,8 @@ export default function page() {
                   <span className={`${styles.icon_container}`}>
                     <Image
                       src="/program_icons/content_training.png"
-                      fill={true}
+                      height={50}
+                      width={50}
                       alt="stick figure lifting weights icon"
                     />
                   </span>
@@ -195,7 +199,8 @@ export default function page() {
                   <span className={`${styles.icon_container}`}>
                     <Image
                       src="/program_icons/content_whatsapp.png"
-                      fill={true}
+                      height={50}
+                      width={50}
                       alt="messaging app icon"
                     />
                   </span>
@@ -206,40 +211,43 @@ export default function page() {
                   <span className={`${styles.icon_container}`}>
                     <Image
                       src="/program_icons/content_manual.png"
-                      fill={true}
+                      height={50}
+                      width={50}
                       alt="guide manual icon"
                     />
                   </span>
-                  <strong>Bonus #1:</strong> Mobility / Flexibility Guide (Video
-                  Demonstration)
+                  Bonus #1: Mobility / Flexibility Guide (Video Demonstration)
                 </li>
                 <li>
                   <span className={`${styles.icon_container}`}>
                     <Image
                       src="/program_icons/content_faq.png"
-                      fill={true}
+                      height={50}
+                      width={50}
                       alt="FAQ icon"
                     />
                   </span>
-                  <strong>Bonus #2:</strong> Access to Facebook Community Group
-                  for Q&A, Form Feedback, Monthly Progress Sharing, and
-                  Networking with Like-Minded People
+                  Bonus #2: Access to Facebook Community Group for Q&A, Form
+                  Feedback, Monthly Progress Sharing, and Networking with
+                  Like-Minded People
                 </li>
                 <li>
                   <span className={`${styles.icon_container}`}>
                     <Image
                       src="/program_icons/content_market.png"
-                      fill={true}
+                      height={50}
+                      width={50}
                       alt="basket icon"
                     />
                   </span>
-                  <strong>Bonus #3:</strong> Grocery Shopping List
+                  Bonus #3: Grocery Shopping List
                 </li>
                 <li>
                   <span className={`${styles.icon_container}`}>
                     <Image
                       src="/program_icons/content_money.png"
-                      fill={true}
+                      height={50}
+                      width={50}
                       alt="wallet icon"
                     />
                   </span>
@@ -269,47 +277,66 @@ export default function page() {
                 <h2>What You Can Expect After 12 Weeks Transformation</h2>
               </header>
 
-              <ul className="">
-                <li>
-                  <strong>Normal Blood Glucose:</strong> You'll feel your body
-                  functioning normally again.
+              <ul className="ps-0 mt-4">
+                <li className="mb-3">
+                  <span className="text-warning fs-1">
+                    Normal Blood Glucose
+                  </span>
+                  <br /> You'll feel your body functioning normally again.
                 </li>
-                <li>
-                  <strong>Reduced Medication or No Medication at All:</strong>{" "}
-                  No more unnecessary expenses on medication — Bye Bye Meds!
+                <li className="mb-3">
+                  <span className="text-warning fs-1">
+                    Reduced Medication or No Medication at All
+                  </span>
+                  <br /> No more unnecessary expenses on medication — Bye Bye
+                  Meds!
                 </li>
-                <li>
-                  <strong>Renewed Energy:</strong> No more cat naps, extra
-                  snoozes, or frequent breaks.
+                <li className="mb-3">
+                  <span className="text-warning fs-1">Renewed Energy</span>
+                  <br /> No more cat naps, extra snoozes, or frequent breaks.
                 </li>
-                <li>
-                  <strong>Burn Body Fat and Gain Eye-Catching Muscles:</strong>{" "}
-                  Love handles and belly fat will give way to toned muscles.
+                <li className="mb-3">
+                  <span className="text-warning fs-1">
+                    Burn Body Fat and Gain Eye-Catching Muscles
+                  </span>
+                  <br /> Love handles and belly fat will give way to toned
+                  muscles.
                 </li>
-                <li>
-                  <strong>Mental Clarity:</strong> Brain fog and lack of focus
-                  caused by poor nutrition will be resolved.
+                <li className="mb-3">
+                  <span className="text-warning fs-1">Mental Clarity</span>
+                  <br /> Brain fog and lack of focus caused by poor nutrition
+                  will be resolved.
                 </li>
-                <li>
-                  <strong>Optimal Performance:</strong> Perform better at the
-                  gym, home, work, and everywhere in life — from playing with
-                  kids to taking the stairs effortlessly.
+                <li className="mb-3">
+                  <span className="text-warning fs-1">Optimal Performance</span>
+                  <br /> Perform better at the gym, home, work, and everywhere
+                  in life — from playing with kids to taking the stairs
+                  effortlessly.
                 </li>
-                <li>
-                  <strong>A Leaner Look:</strong> You'll lose not just pounds,
-                  but also inches off your body.
+                <li className="mb-3">
+                  <span className="text-warning fs-1">A Leaner Look</span>
+                  <br /> You'll lose not just pounds, but also inches off your
+                  body.
                 </li>
-                <li>
-                  <strong>Sense of Pride & Accomplishment:</strong> It's time to
-                  prove the doubters wrong!
+                <li className="mb-3">
+                  <span className="text-warning fs-1">
+                    Sense of Pride & Accomplishment
+                  </span>
+                  <br /> It's time to prove the doubters wrong!
                 </li>
-                <li>
-                  <strong>All Kinds of Compliments:</strong> Prepare for lots of
-                  positive comments on your transformation.
+                <li className="mb-3">
+                  <span className="text-warning fs-1">
+                    All Kinds of Compliments
+                  </span>
+                  <br /> Prepare for lots of positive comments on your
+                  transformation.
                 </li>
-                <li>
-                  <strong>Lifelong Healthy Habits:</strong> Build life-changing
-                  habits that will stick with you for the long-haul.
+                <li className="mb-3">
+                  <span className="text-warning fs-1">
+                    Lifelong Healthy Habits
+                  </span>
+                  <br /> Build life-changing habits that will stick with you for
+                  the long-haul.
                 </li>
               </ul>
             </section>
