@@ -23,7 +23,7 @@ export default async function IndexPage() {
         <div className="container">
           <div className={`${styles.blog_container} row`}>
             {posts.map((post) => (
-              <div key={post._id} className="col-6 col-lg-4 mt-4">
+              <div key={post._id} className="col-lg-4 mt-4">
                 <div
                   className={`${styles.bgImg} px-3 px-lg-5 pb-3`}
                   style={{
